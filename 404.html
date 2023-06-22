@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404</title>
+</head>
+<body>
+<p id="current">Current path:</p>
+<p>Redirecting to: <a id="redirect">ww</a></p>
+</body>
+<script>
+  let current = window.location.pathname
+  document.getElementById('current').innerText += ' ' + current
+
+  let matched = window.location.pathname.match(/(?<year>\d{4})\/\d{2}\/\d{2}\/(?<title>.+)/)
+  let dest = ''
+  if (matched) {
+    let year = matched.groups.year
+    let title = matched.groups.title
+    console.log('year', year)
+    console.log('title', title)
+    dest = `https://blog.fallenbreath.me/zh-CN/${year}/${title}` + (window.location.search || '') + (window.location.hash || '')
+  } else {
+    dest = 'https://blog.fallenbreath.me'
+  }
+
+  document.getElementById('redirect').innerText = dest
+  document.getElementById('redirect').href = dest
+
+  window.location.href = dest
+</script>
+</html>
