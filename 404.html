@@ -2,7 +2,7 @@
 The page you&rsquo;re trying to anchor at has vanished or changed its coordinates.</p><p>You can <a href=/>return back to the homepage</a> and plot a new course.
 Apologies for this unexpected detour!</p><h2 id=navigation-update-for-my-blog>Navigation Update For My Blog</h2><div id=blog_jump></div><p>Set your compasses, folks! On 2023/6/22, I altered the course of <a href=https://blog.fallenbreath.me>my blog</a>.
 Take a look at the url format change:</p><ul><li>From: <code>https://fallenbreath.me/$year/$month/$day/$title</code></li><li>To: <code>https://blog.fallenbreath.me/$lang/$year/$title</code></li></ul><p>No treasures lost, they&rsquo;re just stashed under a different X on the map. Happy navigating!</p></section></article><script>let current=window.location.pathname,matched=current.match(/(?<year>\d{4})\/\d{2}\/\d{2}\/(?<title>.+)/),dest="";if(matched){let e=matched.groups.year,t=matched.groups.title;console.log("year",e),console.log("title",t),dest=`https://blog.fallenbreath.me/zh-CN/${e}/${t}`+(window.location.search||"")+(window.location.hash||"")}dest.length>0&&(document.getElementById("blog_jump").innerHTML=`
-<p>Based on the current path <code>${current}</code>, You might want to access: </p>
+<p>Based on the current url path <code>${current}</code>, you might want to access: </p>
 <p style="text-align: center">
   <a href="${dest}">${dest}</a>
 </p>
