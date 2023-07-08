@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <article class="flex flex-col items-center justify-center mt-10">
+    <nav class="place-self-start">
+      <a href="{{ "" | relURL }}" class="text-neutral-500">&larr; {{ i18n "nav.home" }}</a>
+    </nav>
+    <header>
+      <h1 class="mt-2 mb-6 text-4xl font-extrabold text-center text-neutral-800 dark:text-white">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    <section class="prose dark:prose-invert">
+      {{ with .Site.GetPage "/404" }}
+        {{ .Content }}
+      {{ end }}
+    </section>
+  </article>
+  <script>
+    let current = window.location.pathname
+    let matched = current.match(/(?<year>\d{4})\/\d{2}\/\d{2}\/(?<title>.+)/)
+    let dest = ''
+    if (matched) {
+      let year = matched.groups.year
+      let title = matched.groups.title
+      console.log('year', year)
+      console.log('title', title)
+      dest = `https://blog.fallenbreath.me/zh-CN/${year}/${title}` + (window.location.search || '') + (window.location.hash || '')
+    }
+
+    if (dest.length > 0) {
+      document.getElementById('blog_jump').innerHTML = `
+<p>Based on the current path <code>${current}</code>, You might want to access: </p>
+<p style="text-align: center">
+  <a href="${dest}">${dest}</a>
+</p>
+<hr>
+`
+    }
+  </script>
+{{ end }}

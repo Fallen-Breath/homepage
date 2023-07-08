@@ -1,0 +1,41 @@
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+    border-bottom: 100vh solid transparent;
+    border-left: 20vw solid #A960B5;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    left: 80vw;
+    border-top: 100vh solid transparent;
+    border-right: 20vw solid #FA9753;
+}
+
+main, footer {
+    /* Make sure the triangles won't disrupt text readability that much */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 2em;
+}
+
+header h1, header h2 {
+    margin: 0.15em
+}
+
+.align-text-bottom.icon {
+    vertical-align: middle;
+}
+
+.link-bilibili {
+    background: #01A8E0;
+}
+
+.link-hexo {
+    background: #000033;
+}

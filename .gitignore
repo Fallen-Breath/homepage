@@ -1,2 +1,8 @@
+# ide
 /.idea
 /.vscode
+
+# hugo
+/public
+/resources
+.hugo_build.lock
