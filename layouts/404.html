@@ -30,13 +30,45 @@
     }
 
     if (dest.length > 0) {
-      document.getElementById('blog_jump').innerHTML = `
+      document.getElementById('blog_redirect').innerHTML = `
 <p>Based on the current url path <code>${current}</code>, you might want to access: </p>
 <p style="text-align: center">
   <a href="${dest}">${dest}</a>
 </p>
+<p id="redirect_timer" onclick="onCancel()">Automatically redirect placeholder</p>
 <hr>
 `
+      let autoRedirect = true
+      let countdown = 10
+
+      function onCancel() {
+        autoRedirect = false
+        updateRedirectText()
+        setTimeout(() => document.getElementById("redirect_timer").style.display = "none", 2000)
+      }
+
+      function updateRedirectText() {
+        let e = document.getElementById('redirect_timer')
+        if (autoRedirect) {
+          e.innerText = `Automatically redirect in ${countdown}s... (click to cancel)`
+        } else {
+          e.innerText = `Automatically redirect cancelled`
+        }
+      }
+
+      updateRedirectText()
+      let timerId = setInterval(function() {
+        if (!autoRedirect) {
+          clearInterval(timerId)
+          return
+        }
+        countdown--;
+        updateRedirectText()
+        if (countdown === 0) {
+          clearInterval(timerId);
+          window.location.href = dest
+        }
+      }, 1000);
     }
   </script>
 {{ end }}
