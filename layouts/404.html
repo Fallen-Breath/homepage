@@ -1,4 +1,7 @@
 {{ define "main" }}
+  {{ $cssBackground := resources.Get "css/background.css" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $cssBackground.Permalink }}">
+
   <article class="flex flex-col items-center justify-center mt-10">
     <nav class="place-self-start">
       <a href="{{ "" | relURL }}" class="text-neutral-500">&larr; {{ i18n "nav.home" }}</a>

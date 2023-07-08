@@ -18,28 +18,6 @@ body::after {
     border-right: 20vw solid #FA9753;
 }
 
-/* Make sure the triangles won't disrupt text readability that much */
-main, footer {
-    padding: 0 2em;
-}
-
-@media (prefers-color-scheme: light) {
-  main, footer {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  main, footer {
-    background-color: rgba(31, 41, 55, 0.8);
-  }
-}
-
-footer {
-    /* make sure the backgroud of the footer won't cover the main stuffs */
-    z-index: -10;
-}
-
 header h1, header h2 {
     margin: 0.15em
 }
