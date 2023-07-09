@@ -10,7 +10,7 @@ disableKinds = ["taxonomy", "term"]
 
 [author]
 name = "Fallen_Breath"
-headline = "Lazy coder & Minecraft Explorer"
+headline = "Lazy Coder & Minecraft Explorer"
 image = "avatar.jpg"
 
 links = [

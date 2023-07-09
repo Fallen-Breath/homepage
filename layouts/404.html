@@ -1,7 +1,7 @@
 {{ define "main" }}
-  {{ $cssBackground := resources.Get "css/background.css" | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $cssBackground.Permalink }}">
+  {{- partial "background.html" . -}}
 
+  <!-- lynx/layouts/_default/single.html begins -->
   <article class="flex flex-col items-center justify-center mt-10">
     <nav class="place-self-start">
       <a href="{{ "" | relURL }}" class="text-neutral-500">&larr; {{ i18n "nav.home" }}</a>
@@ -12,11 +12,13 @@
       </h1>
     </header>
     <section class="prose dark:prose-invert">
-      {{ with .Site.GetPage "/404" }}
+      {{ with .Site.GetPage "/404" }}  <!-- modification: use contents in the 404 page -->
         {{ .Content }}
       {{ end }}
     </section>
   </article>
+  <!-- lynx/layouts/_default/single.html ends -->
+
   <script>
     let current = window.location.pathname
     let matched = current.match(/(?<year>\d{4})\/\d{2}\/\d{2}\/(?<title>.+)/)
