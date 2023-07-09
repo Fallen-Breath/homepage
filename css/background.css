@@ -1,13 +1,28 @@
-/* Make sure the triangles won't disrupt text readability that much */
+/* Add a background to make sure the triangles won't disrupt text readability that much */
+main::after, footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2rem;
+  left: -2rem;
+  z-index: -20; }
+
+/* body.px-6 will have 1.5rem padding when width < 640 */
+@media (max-width: 639px) {
+  main::after, footer::after {
+    right: -1.5rem;
+    left: -1.5rem; } }
+
 main, footer {
-  padding: 0 2em; }
+  position: relative; }
 
 @media (prefers-color-scheme: light) {
-  main, footer {
+  main::after, footer::after {
     background-color: rgba(255, 255, 255, 0.8); } }
 
 @media (prefers-color-scheme: dark) {
-  main, footer {
+  main::after, footer::after {
     background-color: rgba(31, 41, 55, 0.8); } }
 
 footer {
