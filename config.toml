@@ -16,9 +16,12 @@ image = "avatar.jpg"
 links = [
     { hexo = { href = "https://blog.fallenbreath.me", text = "My blog" } },
     { github = "https://github.com/Fallen-Breath" },
+    { pgp = { href = "https://github.com/Fallen-Breath.gpg", text = "PGP key" } },
     { bilibili = { href = "https://space.bilibili.com/4690315", text = "Bilibili" } },
-    { youtube = "https://www.youtube.com/" },
+    { youtube = "https://www.youtube.com/@FallenBreath" },
+    { twitch = "https://www.twitch.tv/fallen_breath" },
     { discord = "https://discord.com/users/457576839087521803" },
+    { twitter = "https://twitter.com/Fallen_Breath_" },
     # { email = "mailto:hello@your_domain.com" },
     # { link = "https://link-to-some-website.com/" },
     # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
