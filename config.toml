@@ -8,7 +8,7 @@ title = "Fallen_Breath"
 enableEmoji = true
 disableKinds = ["taxonomy", "term"]
 
-[author]
+[params.author]
 name = "Fallen_Breath"
 headline = "Lazy Coder & Minecraft Explorer"
 image = "avatar.jpg"
