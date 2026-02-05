@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fallen_Breath</title><link>https://fallenbreath.me/</link><description>Recent content on Fallen_Breath</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://fallenbreath.me/index.xml" rel="self" type="application/rss+xml"/><item><title>404 Page Template</title><link>https://fallenbreath.me/404/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fallenbreath.me/404/</guid><description>Ahoy, explorer! Seems like you&amp;rsquo;ve sailed off the edge of the map. The page you&amp;rsquo;re trying to anchor at has vanished or changed its coordinates.
-You can return back to the homepage and plot a new course. Apologies for this unexpected detour!
-Navigation Update For My Blog Set your compasses, folks! On 2023/6/22, I altered the course of my blog. Take a look at the url format change:
-From: https://fallenbreath.me/$year/$month/$day/$title To: https://blog.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fallen_Breath</title><link>https://fallenbreath.me/</link><description>Recent content on Fallen_Breath</description><generator>Hugo</generator><language>en</language><atom:link href="https://fallenbreath.me/index.xml" rel="self" type="application/rss+xml"/><item><title>404 Page Template</title><link>https://fallenbreath.me/404/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://fallenbreath.me/404/</guid><description>&lt;p&gt;Ahoy, explorer! Seems like you&amp;rsquo;ve sailed off the edge of the map.
+The page you&amp;rsquo;re trying to anchor at has vanished or changed its coordinates.&lt;/p&gt;
+&lt;p&gt;You can &lt;a href="https://fallenbreath.me/"&gt;return back to the homepage&lt;/a&gt; and plot a new course.
+Apologies for this unexpected detour!&lt;/p&gt;
+&lt;h2 id="navigation-update-for-my-blog"&gt;Navigation Update For My Blog&lt;/h2&gt;
+&lt;div id="blog_redirect"&gt;&lt;/div&gt;
+
+&lt;p&gt;Set your compasses, folks! On 2023/6/22, I altered the course of &lt;a href="https://blog.fallenbreath.me"&gt;my blog&lt;/a&gt;.
+Take a look at the url format change:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From: &lt;code&gt;https://fallenbreath.me/$year/$month/$day/$title&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;To: &lt;code&gt;https://blog.fallenbreath.me/$lang/$year/$title&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No treasures lost, they&amp;rsquo;re just stashed under a different X on the map. Happy navigating!&lt;/p&gt;</description></item></channel></rss>
