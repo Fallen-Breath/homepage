@@ -1,2 +1,2 @@
-{{ $cssBackground := resources.Get "css/background.css" | resources.ToCSS }}
+{{ $cssBackground := resources.Get "css/background.css" | css.Sass }}
 <link rel="stylesheet" href="{{ $cssBackground.Permalink }}">
